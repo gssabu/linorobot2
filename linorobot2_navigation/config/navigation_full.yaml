@@ -319,10 +319,9 @@ planner_server:
     use_sim_time: True
     planner_plugins: ["GridBased"]
     GridBased:
-      plugin: "nav2_navfn_planner/NavfnPlanner"
-      tolerance: 0.5
-      use_astar: false
-      allow_unknown: true
+      plugin: "full_coverage_path_planner/full_coverage_path_planner"
+      robot_radius: 0.14
+      tool_radius: 0.13
 
 planner_server_rclcpp_node:
   ros__parameters:
