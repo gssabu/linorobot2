@@ -39,7 +39,7 @@ def generate_launch_description():
     )
 
     nav2_config_path = PathJoinSubstitution(
-        [FindPackageShare('linorobot2_navigation'), 'config', 'navigation.yaml']
+        [FindPackageShare('linorobot2_navigation'), 'config', 'navigation_full.yaml']
     )
 
     return LaunchDescription([
