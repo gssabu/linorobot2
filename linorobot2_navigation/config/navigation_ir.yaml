@@ -210,6 +210,12 @@ local_costmap:
         enabled: True
         plugin: "nav2_costmap_2d::RangeSensorLayer"
         topic: /Range
+        phi: 1.2
+        inflate_cone: 15
+        no_readings_timeout: 0.0
+        clear_threshold: 0.1
+        mark_threshold: 0.2
+        clear_on_max_reading: true
         input_sensor_type: FIXED
       static_layer:
         map_subscribe_transient_local: True
@@ -280,6 +286,12 @@ global_costmap:
         enabled: True
         plugin: "nav2_costmap_2d::RangeSensorLayer"
         topic: /Range
+        phi: 1.2
+        inflate_cone: 15
+        no_readings_timeout: 0.0
+        clear_threshold: 0.1
+        mark_threshold: 0.2
+        clear_on_max_reading: true
         input_sensor_type: FIXED
       static_layer:
         plugin: "nav2_costmap_2d::StaticLayer"
