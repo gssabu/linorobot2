@@ -87,6 +87,8 @@ Visualization Manager:
           Value: false
         imu_link:
           Value: false
+        range_link:
+          Value: false
         laser:
           Value: false
         map:
@@ -112,6 +114,8 @@ Visualization Manager:
                 imu_link:
                   {}
                 laser:
+                  {}
+                range:
                   {}
               front_left_wheel_link:
                 {}
@@ -563,6 +567,11 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
         laser:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        range_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
