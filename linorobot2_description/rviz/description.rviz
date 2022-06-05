@@ -78,6 +78,10 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
           Value: true
+        range_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
         rear_left_wheel_link:
           Alpha: 1
           Show Axes: false
@@ -112,6 +116,8 @@ Visualization Manager:
           Value: true
         laser:
           Value: true
+        range_link:
+          Value: true
         rear_left_wheel_link:
           Value: true
         rear_right_wheel_link:
@@ -133,6 +139,8 @@ Visualization Manager:
             imu_link:
               {}
             laser:
+              {}
+            range_link:
               {}
             rear_left_wheel_link:
               {}
