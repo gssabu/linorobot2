@@ -209,11 +209,10 @@ local_costmap:
       range_layer: 
         enabled: True
         plugin: "nav2_costmap_2d::RangeSensorLayer"
-        topic: ["/Range"]
+        topic: ["Range"]
         phi: 1.2
         inflate_cone: 1.5
         no_readings_timeout: 0.0
-        clear_on_max_reading: true
         input_sensor_type: FIXED
       static_layer:
         map_subscribe_transient_local: True
@@ -283,7 +282,7 @@ global_costmap:
       range_layer: 
         enabled: True
         plugin: "nav2_costmap_2d::RangeSensorLayer"
-        topic: ["/Range"]
+        topic: ["Range"]
         phi: 1.2
         inflate_cone: 1.5
         no_readings_timeout: 0.0
