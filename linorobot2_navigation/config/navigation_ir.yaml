@@ -209,12 +209,12 @@ local_costmap:
       range_layer: 
         enabled: True
         plugin: "nav2_costmap_2d::RangeSensorLayer"
-        topic: /Range
+        topic: ["/Range"]
         phi: 1.2
         inflate_cone: 15
         no_readings_timeout: 0.0
         clear_threshold: 0.1
-        mark_threshold: 0.2
+        mark_threshold: 0.8
         clear_on_max_reading: true
         input_sensor_type: FIXED
       static_layer:
