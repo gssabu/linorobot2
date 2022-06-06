@@ -213,8 +213,6 @@ local_costmap:
         phi: 1.2
         inflate_cone: 1.5
         no_readings_timeout: 0.0
-        clear_threshold: 0.1
-        mark_threshold: 0.8
         clear_on_max_reading: true
         input_sensor_type: FIXED
       static_layer:
@@ -289,8 +287,6 @@ global_costmap:
         phi: 1.2
         inflate_cone: 1.5
         no_readings_timeout: 0.0
-        clear_threshold: 0.1
-        mark_threshold: 0.8
         clear_on_max_reading: true
         input_sensor_type: FIXED
       static_layer:
