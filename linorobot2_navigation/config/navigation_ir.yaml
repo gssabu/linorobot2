@@ -195,7 +195,7 @@ local_costmap:
         mark_threshold: 0
         observation_sources: scan base_scan
         scan:
-          topic: /scan
+          topics: /scan
           max_obstacle_height: 2.0
           clearing: True
           marking: True
@@ -282,7 +282,7 @@ global_costmap:
       range_layer:        
         plugin: "nav2_costmap_2d::RangeSensorLayer"
         enabled: True
-        topic: ["/Range"] 
+        topics: ["/Range"] 
         phi: 1.2
         inflate_cone: 1.5
         no_readings_timeout: 0.0
