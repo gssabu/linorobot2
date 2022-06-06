@@ -209,8 +209,7 @@ local_costmap:
       range_layer: 
         plugin: "nav2_costmap_2d::RangeSensorLayer"
         enabled: True
-        topic: 
-          - "/Range"
+        topic: ["/Range"]
         phi: 1.2
         inflate_cone: 1.5
         no_readings_timeout: 0.0
@@ -283,8 +282,7 @@ global_costmap:
       range_layer:        
         plugin: "nav2_costmap_2d::RangeSensorLayer"
         enabled: True
-        topic: 
-          - "/Range"
+        topic: ["/Range"] 
         phi: 1.2
         inflate_cone: 1.5
         no_readings_timeout: 0.0
