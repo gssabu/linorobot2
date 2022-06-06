@@ -207,9 +207,10 @@ local_costmap:
           marking: True
           data_type: "LaserScan"
       range_layer: 
-        enabled: True
         plugin: "nav2_costmap_2d::RangeSensorLayer"
-        topic: ["Range"]
+        enabled: True
+        topic: 
+          -"/Range"
         phi: 1.2
         inflate_cone: 1.5
         no_readings_timeout: 0.0
@@ -279,10 +280,11 @@ global_costmap:
           clearing: True
           marking: True
           data_type: "PointCloud2"
-      range_layer: 
-        enabled: True
+      range_layer:        
         plugin: "nav2_costmap_2d::RangeSensorLayer"
-        topic: ["Range"]
+        enabled: True
+        topic: 
+          -"/Range"
         phi: 1.2
         inflate_cone: 1.5
         no_readings_timeout: 0.0
