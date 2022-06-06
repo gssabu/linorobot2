@@ -211,7 +211,7 @@ local_costmap:
         plugin: "nav2_costmap_2d::RangeSensorLayer"
         topic: ["/Range"]
         phi: 1.2
-        inflate_cone: 15
+        inflate_cone: 1.5
         no_readings_timeout: 0.0
         clear_threshold: 0.1
         mark_threshold: 0.8
@@ -287,7 +287,7 @@ global_costmap:
         plugin: "nav2_costmap_2d::RangeSensorLayer"
         topic: ["/Range"]
         phi: 1.2
-        inflate_cone: 15
+        inflate_cone: 1.5
         no_readings_timeout: 0.0
         clear_threshold: 0.1
         mark_threshold: 0.8
