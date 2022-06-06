@@ -213,7 +213,7 @@ local_costmap:
         phi: 1.2
         inflate_cone: 1.5
         no_readings_timeout: 0.0
-        input_sensor_type: FIXED
+        input_sensor_type: ALL
       static_layer:
         map_subscribe_transient_local: True
       always_send_full_costmap: True
@@ -286,8 +286,7 @@ global_costmap:
         phi: 1.2
         inflate_cone: 1.5
         no_readings_timeout: 0.0
-        clear_on_max_reading: true
-        input_sensor_type: FIXED
+        input_sensor_type: ALL
       static_layer:
         plugin: "nav2_costmap_2d::StaticLayer"
         map_subscribe_transient_local: True
